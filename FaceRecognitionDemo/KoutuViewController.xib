@@ -96,18 +96,36 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zyN-rz-SMx">
                     <rect key="frame" x="0.0" y="434" width="414" height="276"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-Dj-maz">
+                    <rect key="frame" x="302" y="817" width="92" height="30"/>
+                    <state key="normal" title="撤销手动抠图"/>
+                    <connections>
+                        <action selector="clickResetBtn:" destination="-1" eventType="touchUpInside" id="F8a-X3-srC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueM-8q-2mn">
+                    <rect key="frame" x="175" y="817" width="92" height="30"/>
+                    <state key="normal" title="确定手动抠图"/>
+                    <connections>
+                        <action selector="clickOkBtn:" destination="-1" eventType="touchUpInside" id="q1C-Dx-6Nj"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="zyN-rz-SMx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="0WH-Vh-odD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="eNE-Dj-maz" secondAttribute="bottom" constant="15" id="4eM-UG-swF"/>
                 <constraint firstItem="MPh-QV-oiQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Aob-gL-QaU"/>
                 <constraint firstItem="97f-Ae-zDi" firstAttribute="top" secondItem="MPh-QV-oiQ" secondAttribute="bottom" constant="50" id="Nd4-dL-qaf"/>
                 <constraint firstItem="zyN-rz-SMx" firstAttribute="top" secondItem="97f-Ae-zDi" secondAttribute="bottom" constant="20" id="W0Y-gF-u8Y"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="97f-Ae-zDi" secondAttribute="trailing" id="hCi-fm-Mp3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="ueM-8q-2mn" secondAttribute="bottom" constant="15" id="ib1-9g-o7w"/>
                 <constraint firstItem="MPh-QV-oiQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ouF-pq-Tpv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="eNE-Dj-maz" secondAttribute="trailing" constant="20" id="qIi-e9-QAw"/>
                 <constraint firstItem="zyN-rz-SMx" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="r4T-Fv-r53"/>
                 <constraint firstItem="zyN-rz-SMx" firstAttribute="width" secondItem="zyN-rz-SMx" secondAttribute="height" multiplier="1.5:1" id="rOB-RC-mYH"/>
+                <constraint firstItem="eNE-Dj-maz" firstAttribute="leading" secondItem="ueM-8q-2mn" secondAttribute="trailing" constant="35" id="vfQ-g4-SKK"/>
                 <constraint firstItem="97f-Ae-zDi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="yr0-iR-2r9"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MPh-QV-oiQ" secondAttribute="trailing" id="yrR-Q2-Mey"/>
             </constraints>

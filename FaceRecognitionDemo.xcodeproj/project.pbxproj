@@ -10,6 +10,9 @@
 		0BE8874C5800B2BC5709B4F1 /* Pods_FaceRecognitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7862D354F8CCB05698377DF /* Pods_FaceRecognitionDemo.framework */; };
 		2988443E268DA41E00096829 /* TencentCloudAPI3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2988443D268DA41E00096829 /* TencentCloudAPI3.m */; };
 		29884441268DAC7E00096829 /* UIImage+JDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29884440268DAC7E00096829 /* UIImage+JDImage.m */; };
+		2988444C268DC42400096829 /* UIBezierPath+QSJ3DPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 29884448268DC42300096829 /* UIBezierPath+QSJ3DPoint.m */; };
+		2988444D268DC42400096829 /* QSJCroppableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29884449268DC42300096829 /* QSJCroppableView.m */; };
+		2988444E268DC42400096829 /* UIBezierPath+QSJPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2988444B268DC42400096829 /* UIBezierPath+QSJPoint.m */; };
 		CB680A752653B5A600317FE8 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CB680A742653B5A600317FE8 /* base64.m */; };
 		CB680A782654ADD900317FE8 /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A772654ADD900317FE8 /* TranslateViewModel.swift */; };
 		CB680A7C2654B74E00317FE8 /* KoutuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB680A7A2654B74E00317FE8 /* KoutuViewController.m */; };
@@ -50,6 +53,12 @@
 		2988443D268DA41E00096829 /* TencentCloudAPI3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentCloudAPI3.m; sourceTree = "<group>"; };
 		2988443F268DAC7E00096829 /* UIImage+JDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JDImage.h"; sourceTree = "<group>"; };
 		29884440268DAC7E00096829 /* UIImage+JDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JDImage.m"; sourceTree = "<group>"; };
+		29884446268DC42300096829 /* UIBezierPath+QSJ3DPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+QSJ3DPoint.h"; sourceTree = "<group>"; };
+		29884447268DC42300096829 /* QSJCroppableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSJCroppableView.h; sourceTree = "<group>"; };
+		29884448268DC42300096829 /* UIBezierPath+QSJ3DPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+QSJ3DPoint.m"; sourceTree = "<group>"; };
+		29884449268DC42300096829 /* QSJCroppableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSJCroppableView.m; sourceTree = "<group>"; };
+		2988444A268DC42400096829 /* UIBezierPath+QSJPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+QSJPoint.h"; sourceTree = "<group>"; };
+		2988444B268DC42400096829 /* UIBezierPath+QSJPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+QSJPoint.m"; sourceTree = "<group>"; };
 		AE854C921E9EE470DD04FD15 /* Pods-FaceRecognitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionDemo.release.xcconfig"; path = "Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B7862D354F8CCB05698377DF /* Pods_FaceRecognitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceRecognitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9EB2A8D42993BEE2DBE425 /* Pods-FaceRecognitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +128,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29884445268DC3D600096829 /* 手动抠图 */ = {
+			isa = PBXGroup;
+			children = (
+				29884447268DC42300096829 /* QSJCroppableView.h */,
+				29884449268DC42300096829 /* QSJCroppableView.m */,
+				29884446268DC42300096829 /* UIBezierPath+QSJ3DPoint.h */,
+				29884448268DC42300096829 /* UIBezierPath+QSJ3DPoint.m */,
+				2988444A268DC42400096829 /* UIBezierPath+QSJPoint.h */,
+				2988444B268DC42400096829 /* UIBezierPath+QSJPoint.m */,
+			);
+			path = "手动抠图";
+			sourceTree = "<group>";
+		};
 		68F7518CAA190BBD530723FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +161,7 @@
 		CB680A7E2654BB1400317FE8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				29884445268DC3D600096829 /* 手动抠图 */,
 				2988443F268DAC7E00096829 /* UIImage+JDImage.h */,
 				29884440268DAC7E00096829 /* UIImage+JDImage.m */,
 				2988443C268DA41E00096829 /* TencentCloudAPI3.h */,
@@ -353,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCF71712648F96600C8BC22 /* ViewController.m in Sources */,
+				2988444E268DC42400096829 /* UIBezierPath+QSJPoint.m in Sources */,
 				CBCF718E2648F9E400C8BC22 /* VideoPickerController.m in Sources */,
 				CBCF71952648FB5000C8BC22 /* GIFMakingNaviViewController.m in Sources */,
 				CB680A832654BB1400317FE8 /* UIExtension.swift in Sources */,
@@ -367,6 +391,7 @@
 				CB680A752653B5A600317FE8 /* base64.m in Sources */,
 				CB680A782654ADD900317FE8 /* TranslateViewModel.swift in Sources */,
 				CBCF71EB264CFB4300C8BC22 /* ScreeningPeopleViewController.m in Sources */,
+				2988444C268DC42400096829 /* UIBezierPath+QSJ3DPoint.m in Sources */,
 				CB680A8A2654C03700317FE8 /* FaceFeatureView.swift in Sources */,
 				CBCF718C2648F9E400C8BC22 /* PickerCell.m in Sources */,
 				2988443E268DA41E00096829 /* TencentCloudAPI3.m in Sources */,
@@ -377,6 +402,7 @@
 				CB680A842654BB1400317FE8 /* JunViewTool.swift in Sources */,
 				CBCF71982648FC1900C8BC22 /* SystemUtils.m in Sources */,
 				CBCF717C2648F96800C8BC22 /* main.m in Sources */,
+				2988444D268DC42400096829 /* QSJCroppableView.m in Sources */,
 				CBCF71A226492C7E00C8BC22 /* ShowImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

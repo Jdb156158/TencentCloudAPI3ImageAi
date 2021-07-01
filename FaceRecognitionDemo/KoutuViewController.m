@@ -14,6 +14,7 @@
 #include <math.h>
 #import "TencentCloudAPI3.h"
 #import "UIImage+JDImage.h"
+#import "QSJCroppableView.h"
 
 #define pi 3.14159265358979323846
 #define degreesToRadian(x) (pi * x / 180.0)
@@ -24,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *featureImageView;
 @property (strong, nonatomic) UIView *faceView;
 @property (strong, nonatomic) UIImageView *faceImageView;
+@property (strong, nonatomic) QSJCroppableView *qsjCroppableView;
 @end
 
 @implementation KoutuViewController
@@ -55,8 +57,20 @@
         self.faceView = faceView;
     }];
     
-
+    CGRect rect1 = CGRectMake(0, 0, self.imageView.image.size.width, self.imageView.image.size.height);
+    CGRect rect2 = self.imageView.frame;
+    [QSJCroppableView scaleRespectAspectFromRect1:rect1 toRect2:rect2];
+    
+    [self setUpQSJCroppableView];
 }
+
+- (void)setUpQSJCroppableView
+{
+    [self.qsjCroppableView removeFromSuperview];
+    self.qsjCroppableView = [[QSJCroppableView alloc] initWithImageView:self.imageView];
+    [self.view addSubview:self.qsjCroppableView];
+}
+
 -(CGRect)frameForImage:(UIImage*)image inImageViewAspectFit:(UIImageView*)imageView
 {
     float imageRatio = image.size.width / image.size.height;
@@ -181,6 +195,23 @@
     }];
 }
 
+- (IBAction)clickResetBtn:(id)sender {
+    
+    [self setUpQSJCroppableView];
+    
+}
+- (IBAction)clickOkBtn:(id)sender {
+    
+    UIImage *croppedImage = [self.qsjCroppableView deleteBackgroundOfImage:self.imageView];
+    self.imageView.image = croppedImage;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self setUpQSJCroppableView];
+        
+    });
+    
+}
 
 - (CGFloat)distanceBetweenPoints:(CGPoint)first second:(CGPoint)second {
     CGFloat deltaX = second.x - first.x;
