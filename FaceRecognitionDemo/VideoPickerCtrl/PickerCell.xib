@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="112" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_expression" translatesAutoresizingMaskIntoConstraints="NO" id="uGK-qd-tQG">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="108"/>
+                    </imageView>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtK-oF-dtW">
+                        <rect key="frame" x="0.0" y="88" width="112" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vI-fc-Zgt">
+                                <rect key="frame" x="0.0" y="0.0" width="107" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_icon_video" translatesAutoresizingMaskIntoConstraints="NO" id="Jpp-va-alQ">
+                                <rect key="frame" x="5" y="5" width="15" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="4VL-xH-f9i"/>
+                                    <constraint firstAttribute="height" constant="10" id="5oA-eT-2I9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jpp-va-alQ" firstAttribute="centerY" secondItem="VtK-oF-dtW" secondAttribute="centerY" id="2Gk-71-XxY"/>
+                            <constraint firstAttribute="bottom" secondItem="5vI-fc-Zgt" secondAttribute="bottom" id="BDY-n1-9zW"/>
+                            <constraint firstItem="5vI-fc-Zgt" firstAttribute="leading" secondItem="VtK-oF-dtW" secondAttribute="leading" id="Gtd-a5-pga"/>
+                            <constraint firstItem="Jpp-va-alQ" firstAttribute="leading" secondItem="VtK-oF-dtW" secondAttribute="leading" constant="5" id="J5g-5f-wRY"/>
+                            <constraint firstAttribute="trailing" secondItem="5vI-fc-Zgt" secondAttribute="trailing" constant="5" id="OoG-5N-mM0"/>
+                            <constraint firstItem="5vI-fc-Zgt" firstAttribute="top" secondItem="VtK-oF-dtW" secondAttribute="top" id="lRF-uo-Mwq"/>
+                            <constraint firstAttribute="height" constant="20" id="uAG-0b-8lb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="云下载" translatesAutoresizingMaskIntoConstraints="NO" id="h28-ua-ZIR">
+                        <rect key="frame" x="82" y="5" width="25" height="25"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="MRF-lm-yPE"/>
+                            <constraint firstAttribute="width" constant="25" id="YQF-Qc-0Ck"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="h28-ua-ZIR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="4OS-XF-9WX"/>
+                <constraint firstAttribute="bottom" secondItem="uGK-qd-tQG" secondAttribute="bottom" id="7O4-0u-9bc"/>
+                <constraint firstItem="uGK-qd-tQG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9KW-4r-Rri"/>
+                <constraint firstAttribute="trailing" secondItem="h28-ua-ZIR" secondAttribute="trailing" constant="5" id="Fhl-Fp-Thl"/>
+                <constraint firstAttribute="trailing" secondItem="VtK-oF-dtW" secondAttribute="trailing" id="OsW-Ad-nWL"/>
+                <constraint firstAttribute="bottom" secondItem="VtK-oF-dtW" secondAttribute="bottom" id="bfc-16-Q73"/>
+                <constraint firstAttribute="trailing" secondItem="uGK-qd-tQG" secondAttribute="trailing" id="din-dC-bF5"/>
+                <constraint firstItem="VtK-oF-dtW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pGo-F8-Qim"/>
+                <constraint firstItem="uGK-qd-tQG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zg7-5W-s0U"/>
+            </constraints>
+            <size key="customSize" width="112" height="108"/>
+            <connections>
+                <outlet property="bottomView" destination="VtK-oF-dtW" id="d9L-hv-DTB"/>
+                <outlet property="coverImg" destination="uGK-qd-tQG" id="j0t-Y8-CV7"/>
+                <outlet property="icloudImageView" destination="h28-ua-ZIR" id="wBo-84-arz"/>
+                <outlet property="videoTimeLabel" destination="5vI-fc-Zgt" id="1SF-PT-YPz"/>
+                <outlet property="vodieIcon" destination="Jpp-va-alQ" id="0kf-DU-4QK"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="147.99107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="album_icon_video" width="14" height="10"/>
+        <image name="cell_expression" width="105" height="105"/>
+        <image name="云下载" width="24" height="24"/>
+    </resources>
+</document>

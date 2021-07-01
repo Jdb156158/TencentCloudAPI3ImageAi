@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BE8874C5800B2BC5709B4F1 /* Pods_FaceRecognitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7862D354F8CCB05698377DF /* Pods_FaceRecognitionDemo.framework */; };
+		2988443E268DA41E00096829 /* TencentCloudAPI3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2988443D268DA41E00096829 /* TencentCloudAPI3.m */; };
+		29884441268DAC7E00096829 /* UIImage+JDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29884440268DAC7E00096829 /* UIImage+JDImage.m */; };
+		CB680A752653B5A600317FE8 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CB680A742653B5A600317FE8 /* base64.m */; };
+		CB680A782654ADD900317FE8 /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A772654ADD900317FE8 /* TranslateViewModel.swift */; };
+		CB680A7C2654B74E00317FE8 /* KoutuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB680A7A2654B74E00317FE8 /* KoutuViewController.m */; };
+		CB680A7D2654B74E00317FE8 /* KoutuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB680A7B2654B74E00317FE8 /* KoutuViewController.xib */; };
+		CB680A822654BB1400317FE8 /* JunVisionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A7F2654BB1400317FE8 /* JunVisionTool.swift */; };
+		CB680A832654BB1400317FE8 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A802654BB1400317FE8 /* UIExtension.swift */; };
+		CB680A842654BB1400317FE8 /* JunViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A812654BB1400317FE8 /* JunViewTool.swift */; };
+		CB680A862654BB5A00317FE8 /* FaceFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A852654BB5A00317FE8 /* FaceFeatureModel.swift */; };
+		CB680A882654BB8200317FE8 /* CodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A872654BB8200317FE8 /* CodeModel.swift */; };
+		CB680A8A2654C03700317FE8 /* FaceFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB680A892654C03700317FE8 /* FaceFeatureView.swift */; };
+		CBCF716B2648F96600C8BC22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF716A2648F96600C8BC22 /* AppDelegate.m */; };
+		CBCF71712648F96600C8BC22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71702648F96600C8BC22 /* ViewController.m */; };
+		CBCF71742648F96600C8BC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71722648F96600C8BC22 /* Main.storyboard */; };
+		CBCF71762648F96800C8BC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71752648F96800C8BC22 /* Assets.xcassets */; };
+		CBCF71792648F96800C8BC22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71772648F96800C8BC22 /* LaunchScreen.storyboard */; };
+		CBCF717C2648F96800C8BC22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF717B2648F96800C8BC22 /* main.m */; };
+		CBCF718B2648F9E400C8BC22 /* CellFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71832648F9E300C8BC22 /* CellFlowLayout.m */; };
+		CBCF718C2648F9E400C8BC22 /* PickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71862648F9E300C8BC22 /* PickerCell.m */; };
+		CBCF718D2648F9E400C8BC22 /* VideoPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71882648F9E400C8BC22 /* VideoPickerController.xib */; };
+		CBCF718E2648F9E400C8BC22 /* VideoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71892648F9E400C8BC22 /* VideoPickerController.m */; };
+		CBCF718F2648F9E400C8BC22 /* PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF718A2648F9E400C8BC22 /* PickerCell.xib */; };
+		CBCF71922648FACE00C8BC22 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71912648FACE00C8BC22 /* UIViewController+Utils.m */; };
+		CBCF71952648FB5000C8BC22 /* GIFMakingNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71932648FB5000C8BC22 /* GIFMakingNaviViewController.m */; };
+		CBCF71982648FC1900C8BC22 /* SystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71972648FC1900C8BC22 /* SystemUtils.m */; };
+		CBCF719B2649048E00C8BC22 /* IWCheckImageHaveFace.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF719A2649048E00C8BC22 /* IWCheckImageHaveFace.m */; };
+		CBCF719E2649217D00C8BC22 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF719D2649217D00C8BC22 /* HttpTool.m */; };
+		CBCF71A226492C7E00C8BC22 /* ShowImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71A026492C7E00C8BC22 /* ShowImageViewController.m */; };
+		CBCF71A326492C7E00C8BC22 /* ShowImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71A126492C7E00C8BC22 /* ShowImageViewController.xib */; };
+		CBCF71A6264A1E4C00C8BC22 /* HudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71A4264A1E4C00C8BC22 /* HudManager.m */; };
+		CBCF71EB264CFB4300C8BC22 /* ScreeningPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71E9264CFB4300C8BC22 /* ScreeningPeopleViewController.m */; };
+		CBCF71EC264CFB4300C8BC22 /* ScreeningPeopleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71EA264CFB4300C8BC22 /* ScreeningPeopleViewController.xib */; };
+		CBCF71F0264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF71EE264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.m */; };
+		CBCF71F1264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF71EF264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2988443C268DA41E00096829 /* TencentCloudAPI3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentCloudAPI3.h; sourceTree = "<group>"; };
+		2988443D268DA41E00096829 /* TencentCloudAPI3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentCloudAPI3.m; sourceTree = "<group>"; };
+		2988443F268DAC7E00096829 /* UIImage+JDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JDImage.h"; sourceTree = "<group>"; };
+		29884440268DAC7E00096829 /* UIImage+JDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JDImage.m"; sourceTree = "<group>"; };
+		AE854C921E9EE470DD04FD15 /* Pods-FaceRecognitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionDemo.release.xcconfig"; path = "Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B7862D354F8CCB05698377DF /* Pods_FaceRecognitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceRecognitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9EB2A8D42993BEE2DBE425 /* Pods-FaceRecognitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CB680A732653B5A600317FE8 /* base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		CB680A742653B5A600317FE8 /* base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		CB680A762654ADD800317FE8 /* FaceRecognitionDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceRecognitionDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB680A772654ADD900317FE8 /* TranslateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
+		CB680A792654B74E00317FE8 /* KoutuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KoutuViewController.h; sourceTree = "<group>"; };
+		CB680A7A2654B74E00317FE8 /* KoutuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KoutuViewController.m; sourceTree = "<group>"; };
+		CB680A7B2654B74E00317FE8 /* KoutuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KoutuViewController.xib; sourceTree = "<group>"; };
+		CB680A7F2654BB1400317FE8 /* JunVisionTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JunVisionTool.swift; sourceTree = "<group>"; };
+		CB680A802654BB1400317FE8 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		CB680A812654BB1400317FE8 /* JunViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JunViewTool.swift; sourceTree = "<group>"; };
+		CB680A852654BB5A00317FE8 /* FaceFeatureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceFeatureModel.swift; sourceTree = "<group>"; };
+		CB680A872654BB8200317FE8 /* CodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeModel.swift; sourceTree = "<group>"; };
+		CB680A892654C03700317FE8 /* FaceFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceFeatureView.swift; sourceTree = "<group>"; };
+		CBCF71662648F96600C8BC22 /* FaceRecognitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceRecognitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCF71692648F96600C8BC22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBCF716A2648F96600C8BC22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBCF716F2648F96600C8BC22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBCF71702648F96600C8BC22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBCF71732648F96600C8BC22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBCF71752648F96800C8BC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBCF71782648F96800C8BC22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBCF717A2648F96800C8BC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCF717B2648F96800C8BC22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBCF71832648F9E300C8BC22 /* CellFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFlowLayout.m; sourceTree = "<group>"; };
+		CBCF71842648F9E300C8BC22 /* PickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerCell.h; sourceTree = "<group>"; };
+		CBCF71852648F9E300C8BC22 /* VideoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPickerController.h; sourceTree = "<group>"; };
+		CBCF71862648F9E300C8BC22 /* PickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerCell.m; sourceTree = "<group>"; };
+		CBCF71872648F9E400C8BC22 /* CellFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFlowLayout.h; sourceTree = "<group>"; };
+		CBCF71882648F9E400C8BC22 /* VideoPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPickerController.xib; sourceTree = "<group>"; };
+		CBCF71892648F9E400C8BC22 /* VideoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPickerController.m; sourceTree = "<group>"; };
+		CBCF718A2648F9E400C8BC22 /* PickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerCell.xib; sourceTree = "<group>"; };
+		CBCF71902648FACE00C8BC22 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		CBCF71912648FACE00C8BC22 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		CBCF71932648FB5000C8BC22 /* GIFMakingNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFMakingNaviViewController.m; sourceTree = "<group>"; };
+		CBCF71942648FB5000C8BC22 /* GIFMakingNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFMakingNaviViewController.h; sourceTree = "<group>"; };
+		CBCF71962648FC1900C8BC22 /* SystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemUtils.h; sourceTree = "<group>"; };
+		CBCF71972648FC1900C8BC22 /* SystemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemUtils.m; sourceTree = "<group>"; };
+		CBCF71992649048E00C8BC22 /* IWCheckImageHaveFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWCheckImageHaveFace.h; sourceTree = "<group>"; };
+		CBCF719A2649048E00C8BC22 /* IWCheckImageHaveFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IWCheckImageHaveFace.m; sourceTree = "<group>"; };
+		CBCF719C2649217D00C8BC22 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		CBCF719D2649217D00C8BC22 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		CBCF719F26492C7E00C8BC22 /* ShowImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowImageViewController.h; sourceTree = "<group>"; };
+		CBCF71A026492C7E00C8BC22 /* ShowImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageViewController.m; sourceTree = "<group>"; };
+		CBCF71A126492C7E00C8BC22 /* ShowImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowImageViewController.xib; sourceTree = "<group>"; };
+		CBCF71A4264A1E4C00C8BC22 /* HudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudManager.m; sourceTree = "<group>"; };
+		CBCF71A5264A1E4C00C8BC22 /* HudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudManager.h; sourceTree = "<group>"; };
+		CBCF71E8264CFB4300C8BC22 /* ScreeningPeopleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreeningPeopleViewController.h; sourceTree = "<group>"; };
+		CBCF71E9264CFB4300C8BC22 /* ScreeningPeopleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreeningPeopleViewController.m; sourceTree = "<group>"; };
+		CBCF71EA264CFB4300C8BC22 /* ScreeningPeopleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreeningPeopleViewController.xib; sourceTree = "<group>"; };
+		CBCF71ED264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreeningPeopleCollectionViewCell.h; sourceTree = "<group>"; };
+		CBCF71EE264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreeningPeopleCollectionViewCell.m; sourceTree = "<group>"; };
+		CBCF71EF264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreeningPeopleCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBCF71632648F96600C8BC22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE8874C5800B2BC5709B4F1 /* Pods_FaceRecognitionDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68F7518CAA190BBD530723FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7862D354F8CCB05698377DF /* Pods_FaceRecognitionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D175142AA0AFB6EFAA7C765 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EB2A8D42993BEE2DBE425 /* Pods-FaceRecognitionDemo.debug.xcconfig */,
+				AE854C921E9EE470DD04FD15 /* Pods-FaceRecognitionDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB680A7E2654BB1400317FE8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2988443F268DAC7E00096829 /* UIImage+JDImage.h */,
+				29884440268DAC7E00096829 /* UIImage+JDImage.m */,
+				2988443C268DA41E00096829 /* TencentCloudAPI3.h */,
+				2988443D268DA41E00096829 /* TencentCloudAPI3.m */,
+				CB680A812654BB1400317FE8 /* JunViewTool.swift */,
+				CB680A7F2654BB1400317FE8 /* JunVisionTool.swift */,
+				CB680A802654BB1400317FE8 /* UIExtension.swift */,
+				CB680A852654BB5A00317FE8 /* FaceFeatureModel.swift */,
+				CB680A872654BB8200317FE8 /* CodeModel.swift */,
+				CB680A892654C03700317FE8 /* FaceFeatureView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CBCF715D2648F96600C8BC22 = {
+			isa = PBXGroup;
+			children = (
+				CBCF71682648F96600C8BC22 /* FaceRecognitionDemo */,
+				CBCF71672648F96600C8BC22 /* Products */,
+				8D175142AA0AFB6EFAA7C765 /* Pods */,
+				68F7518CAA190BBD530723FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBCF71672648F96600C8BC22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF71662648F96600C8BC22 /* FaceRecognitionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBCF71682648F96600C8BC22 /* FaceRecognitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB680A7E2654BB1400317FE8 /* Tools */,
+				CBCF71822648F9E300C8BC22 /* VideoPickerCtrl */,
+				CBCF71692648F96600C8BC22 /* AppDelegate.h */,
+				CBCF716A2648F96600C8BC22 /* AppDelegate.m */,
+				CBCF716F2648F96600C8BC22 /* ViewController.h */,
+				CBCF71702648F96600C8BC22 /* ViewController.m */,
+				CBCF71942648FB5000C8BC22 /* GIFMakingNaviViewController.h */,
+				CBCF71932648FB5000C8BC22 /* GIFMakingNaviViewController.m */,
+				CBCF71962648FC1900C8BC22 /* SystemUtils.h */,
+				CBCF71972648FC1900C8BC22 /* SystemUtils.m */,
+				CBCF71992649048E00C8BC22 /* IWCheckImageHaveFace.h */,
+				CBCF719A2649048E00C8BC22 /* IWCheckImageHaveFace.m */,
+				CBCF719C2649217D00C8BC22 /* HttpTool.h */,
+				CBCF719D2649217D00C8BC22 /* HttpTool.m */,
+				CBCF719F26492C7E00C8BC22 /* ShowImageViewController.h */,
+				CBCF71A026492C7E00C8BC22 /* ShowImageViewController.m */,
+				CBCF71A126492C7E00C8BC22 /* ShowImageViewController.xib */,
+				CBCF71E8264CFB4300C8BC22 /* ScreeningPeopleViewController.h */,
+				CBCF71E9264CFB4300C8BC22 /* ScreeningPeopleViewController.m */,
+				CBCF71EA264CFB4300C8BC22 /* ScreeningPeopleViewController.xib */,
+				CBCF71ED264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.h */,
+				CBCF71EE264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.m */,
+				CBCF71EF264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.xib */,
+				CB680A792654B74E00317FE8 /* KoutuViewController.h */,
+				CB680A7A2654B74E00317FE8 /* KoutuViewController.m */,
+				CB680A7B2654B74E00317FE8 /* KoutuViewController.xib */,
+				CBCF71A5264A1E4C00C8BC22 /* HudManager.h */,
+				CBCF71A4264A1E4C00C8BC22 /* HudManager.m */,
+				CB680A772654ADD900317FE8 /* TranslateViewModel.swift */,
+				CBCF71722648F96600C8BC22 /* Main.storyboard */,
+				CBCF71752648F96800C8BC22 /* Assets.xcassets */,
+				CBCF71772648F96800C8BC22 /* LaunchScreen.storyboard */,
+				CBCF717A2648F96800C8BC22 /* Info.plist */,
+				CBCF717B2648F96800C8BC22 /* main.m */,
+				CB680A732653B5A600317FE8 /* base64.h */,
+				CB680A742653B5A600317FE8 /* base64.m */,
+				CB680A762654ADD800317FE8 /* FaceRecognitionDemo-Bridging-Header.h */,
+			);
+			path = FaceRecognitionDemo;
+			sourceTree = "<group>";
+		};
+		CBCF71822648F9E300C8BC22 /* VideoPickerCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF71902648FACE00C8BC22 /* UIViewController+Utils.h */,
+				CBCF71912648FACE00C8BC22 /* UIViewController+Utils.m */,
+				CBCF71872648F9E400C8BC22 /* CellFlowLayout.h */,
+				CBCF71832648F9E300C8BC22 /* CellFlowLayout.m */,
+				CBCF71842648F9E300C8BC22 /* PickerCell.h */,
+				CBCF71862648F9E300C8BC22 /* PickerCell.m */,
+				CBCF718A2648F9E400C8BC22 /* PickerCell.xib */,
+				CBCF71852648F9E300C8BC22 /* VideoPickerController.h */,
+				CBCF71892648F9E400C8BC22 /* VideoPickerController.m */,
+				CBCF71882648F9E400C8BC22 /* VideoPickerController.xib */,
+			);
+			path = VideoPickerCtrl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBCF71652648F96600C8BC22 /* FaceRecognitionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCF717F2648F96800C8BC22 /* Build configuration list for PBXNativeTarget "FaceRecognitionDemo" */;
+			buildPhases = (
+				2767AB4029F9FD13C5ADB3DB /* [CP] Check Pods Manifest.lock */,
+				CBCF71622648F96600C8BC22 /* Sources */,
+				CBCF71632648F96600C8BC22 /* Frameworks */,
+				CBCF71642648F96600C8BC22 /* Resources */,
+				B8083B652BA48DE71A0FC36E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceRecognitionDemo;
+			productName = FaceRecognitionDemo;
+			productReference = CBCF71662648F96600C8BC22 /* FaceRecognitionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBCF715E2648F96600C8BC22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CBCF71652648F96600C8BC22 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = CBCF71612648F96600C8BC22 /* Build configuration list for PBXProject "FaceRecognitionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBCF715D2648F96600C8BC22;
+			productRefGroup = CBCF71672648F96600C8BC22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBCF71652648F96600C8BC22 /* FaceRecognitionDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBCF71642648F96600C8BC22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCF71F1264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.xib in Resources */,
+				CBCF71EC264CFB4300C8BC22 /* ScreeningPeopleViewController.xib in Resources */,
+				CBCF71792648F96800C8BC22 /* LaunchScreen.storyboard in Resources */,
+				CBCF71762648F96800C8BC22 /* Assets.xcassets in Resources */,
+				CBCF71742648F96600C8BC22 /* Main.storyboard in Resources */,
+				CB680A7D2654B74E00317FE8 /* KoutuViewController.xib in Resources */,
+				CBCF718D2648F9E400C8BC22 /* VideoPickerController.xib in Resources */,
+				CBCF718F2648F9E400C8BC22 /* PickerCell.xib in Resources */,
+				CBCF71A326492C7E00C8BC22 /* ShowImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2767AB4029F9FD13C5ADB3DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceRecognitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8083B652BA48DE71A0FC36E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBCF71622648F96600C8BC22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCF71712648F96600C8BC22 /* ViewController.m in Sources */,
+				CBCF718E2648F9E400C8BC22 /* VideoPickerController.m in Sources */,
+				CBCF71952648FB5000C8BC22 /* GIFMakingNaviViewController.m in Sources */,
+				CB680A832654BB1400317FE8 /* UIExtension.swift in Sources */,
+				CBCF719B2649048E00C8BC22 /* IWCheckImageHaveFace.m in Sources */,
+				CBCF718B2648F9E400C8BC22 /* CellFlowLayout.m in Sources */,
+				CBCF71922648FACE00C8BC22 /* UIViewController+Utils.m in Sources */,
+				29884441268DAC7E00096829 /* UIImage+JDImage.m in Sources */,
+				CBCF716B2648F96600C8BC22 /* AppDelegate.m in Sources */,
+				CB680A7C2654B74E00317FE8 /* KoutuViewController.m in Sources */,
+				CB680A862654BB5A00317FE8 /* FaceFeatureModel.swift in Sources */,
+				CBCF71A6264A1E4C00C8BC22 /* HudManager.m in Sources */,
+				CB680A752653B5A600317FE8 /* base64.m in Sources */,
+				CB680A782654ADD900317FE8 /* TranslateViewModel.swift in Sources */,
+				CBCF71EB264CFB4300C8BC22 /* ScreeningPeopleViewController.m in Sources */,
+				CB680A8A2654C03700317FE8 /* FaceFeatureView.swift in Sources */,
+				CBCF718C2648F9E400C8BC22 /* PickerCell.m in Sources */,
+				2988443E268DA41E00096829 /* TencentCloudAPI3.m in Sources */,
+				CBCF71F0264D019F00C8BC22 /* ScreeningPeopleCollectionViewCell.m in Sources */,
+				CBCF719E2649217D00C8BC22 /* HttpTool.m in Sources */,
+				CB680A822654BB1400317FE8 /* JunVisionTool.swift in Sources */,
+				CB680A882654BB8200317FE8 /* CodeModel.swift in Sources */,
+				CB680A842654BB1400317FE8 /* JunViewTool.swift in Sources */,
+				CBCF71982648FC1900C8BC22 /* SystemUtils.m in Sources */,
+				CBCF717C2648F96800C8BC22 /* main.m in Sources */,
+				CBCF71A226492C7E00C8BC22 /* ShowImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBCF71722648F96600C8BC22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBCF71732648F96600C8BC22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBCF71772648F96800C8BC22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBCF71782648F96800C8BC22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBCF717D2648F96800C8BC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBCF717E2648F96800C8BC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBCF71802648F96800C8BC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9EB2A8D42993BEE2DBE425 /* Pods-FaceRecognitionDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66J36J3K2;
+				INFOPLIST_FILE = FaceRecognitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pxk.FaceRecognitionDemo1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceRecognitionDemo/FaceRecognitionDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBCF71812648F96800C8BC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE854C921E9EE470DD04FD15 /* Pods-FaceRecognitionDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66J36J3K2;
+				INFOPLIST_FILE = FaceRecognitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pxk.FaceRecognitionDemo1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceRecognitionDemo/FaceRecognitionDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBCF71612648F96600C8BC22 /* Build configuration list for PBXProject "FaceRecognitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCF717D2648F96800C8BC22 /* Debug */,
+				CBCF717E2648F96800C8BC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCF717F2648F96800C8BC22 /* Build configuration list for PBXNativeTarget "FaceRecognitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCF71802648F96800C8BC22 /* Debug */,
+				CBCF71812648F96800C8BC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBCF715E2648F96600C8BC22 /* Project object */;
+}
